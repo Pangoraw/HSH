@@ -1,0 +1,81 @@
+.hud
+  margin-bottom 50px
+  > span
+    position absolute
+    top 0
+    margin-top 5px
+    background-color #DDD
+    cursor pointer
+    height 40px
+    width 40px
+    border-radius 50%
+    > i
+      position relative
+      top 50%
+      left 50%
+      transform translateX(-50%) translateY(-50%)
+div#components-panel
+  border-right 1px solid #777
+  background-color #CCC
+  float left
+  overflow-x hidden
+  height 100%
+  display flex
+  position fixed
+  top 0
+  left 0
+  &.in
+    max-width 0
+    width auto !important
+  &.out
+    width 300px
+  > .header
+    background-color #EEE
+    height 50px
+    width 100%
+    > button
+      float right
+      position absolute
+      top 25px
+      right 0
+      height 25px
+      border none
+      width 8%
+    > button:first-of-type
+      top 0
+    > h1
+      max-width 90px
+      font-family "Roboto"
+      position relative
+      left 42%
+      bottom 25%
+  > ul
+    position absolute
+    left 0
+    top 50px
+    margin 0
+    padding 0
+    width 100%
+    min-width 0
+    > li
+      width 100%
+      margin 20px
+      margin-top 10px
+      list-style none
+      min-width 0
+      > i:first-child
+        cursor ns-resize
+      > i
+        cursor pointer
+      > hr
+        float left
+        width calc(100% - 50px)
+      > p
+        font-family "Roboto"
+        position relative
+        margin-left 5px
+        margin-bottom 0px
+        margin-top 5px
+        overflow hidden
+        min-width 0
+        display inline-block
