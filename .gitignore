@@ -3,13 +3,13 @@ logs
 *.log
 
 # Builded Files
-!server\
-server\*.js
-!server\Gulpfile.js
+!server/
+!server/Gulpfile.js
+server/*.js
 
-!client\
-client\*.js
-!client\Gulpfile.js
+!client/
+client/*.js
+!client/Gulpfile.js
 
 public/*.html
 public/*.js
