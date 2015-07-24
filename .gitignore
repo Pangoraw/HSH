@@ -2,6 +2,7 @@
 
 !server/
 server/*/**.js
+server/*.js
 !server/Gulpfile.js
 
 !client/
