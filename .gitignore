@@ -2,6 +2,24 @@
 logs
 *.log
 
+# Builded Files
+!server\
+server\*.js
+!server\Gulpfile.js
+
+!client\
+client\*.js
+!client\Gulpfile.js
+
+public/*.html
+public/*.js
+public/*.css
+
+plugins/
+
+HSHCore/*.js
+
+
 # Runtime data
 pids
 *.pid
