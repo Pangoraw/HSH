@@ -1,9 +1,10 @@
 # Home Sweet Home
 
-**Introduction**
+**Introduction :**
+
 *HSH is a tool that will help centralize all of your house's dependencies.*
 
-**Configuration**
+**Configuration :**
 
 *To setup your HSH server, you can create a configuration file at the root of the HSH folder, call it `config.json` and then HSH will use the configuration you have written instead of the default configuration.*
 
