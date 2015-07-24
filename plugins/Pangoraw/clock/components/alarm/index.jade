@@ -1,0 +1,20 @@
+extends ../layout
+
+block head
+  link(rel="stylesheet", type="text/css", href="index.css")
+
+block component
+  audio#sound(preload="auto", src="notification.wav")
+  div#clock
+  div#alarm-settings
+    label Label
+    input#label(type="text")
+    label Hours
+    input#hours(type="number", placeholder="00")
+    label Minutes
+    input#minutes(type="number", placeholder="00")
+    label Seconds
+    input#seconds(type="number", placeholder="00")
+  div#settings
+    i#button.material-icons settings
+  script(src="index.js")

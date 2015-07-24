@@ -1,0 +1,17 @@
+{
+  "name": "clock",
+  "version": "0.0.1",
+  "author": "Pangoraw",
+  "license": "ISC",
+  "devDependencies" :
+  { "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-stylus": "^2.0.5",
+    "gulp-typescript": "^2.7.7",
+    "jade": "^1.11.0",
+    "nib": "^1.1.0",
+    "typescript": "^1.5.0-beta",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

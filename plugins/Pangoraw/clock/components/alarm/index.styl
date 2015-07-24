@@ -1,0 +1,40 @@
+body, html
+  margin 0
+  padding 0
+  height 100%
+  width 100%
+
+body:hover
+  > div#settings
+    display block
+
+
+div#alarm-settings
+  display none
+  font-family courier, monospace
+  font-size 150%
+  position absolute
+  top 50%
+  left 50%
+  width 152px
+  transform translateX(-50%) translateY(-50%)
+  > input[type="number"]
+    margin-top 3px
+    width 33px
+    float right
+
+div#settings
+  > i
+    cursor pointer
+  position absolute
+  top 10px
+  right 10px
+  display none
+
+div#clock
+  font-family courier, monospace
+  font-size 300%
+  position absolute
+  top 50%
+  left 50%
+  transform translateX(-50%) translateY(-50%)
