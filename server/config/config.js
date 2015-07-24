@@ -13,5 +13,4 @@ function config() {
         serverConfig.host = userConfig.server.host;
     return serverConfig;
 }
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = config;
