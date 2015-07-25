@@ -21,7 +21,8 @@ export default class PluginRemoteClient extends HSHCore.QueryParent {
     for (let author of authors) {
       let pluginsByAuthor = fs.readdirSync(`./plugins/${author}`);
       for (let pluginName of pluginsByAuthor) {
-        plugins.push(new HSHCore.Plugin(author, pluginName));
+        if (fs.statSync(`./plugins/${author}/${pluginName}`).isDirectory() && pluginName !== ".git")
+          plugins.push(new HSHCore.Plugin(author, pluginName));
       }
     }
 
@@ -38,7 +39,8 @@ export function getAllPlugins() : HSHCore.Plugin[] {
   for (let author of authors) {
     let pluginsByAuthor = fs.readdirSync(`./plugins/${author}`);
     for (let pluginName of pluginsByAuthor) {
-      plugins.push(new HSHCore.Plugin(author, pluginName));
+      if (fs.statSync(`./plugins/${author}/${pluginName}`).isDirectory() && pluginName !== ".git")
+        plugins.push(new HSHCore.Plugin(author, pluginName));
     }
   }
   HSHCore.log(`Loaded ${plugins.length} plugins from ${path.join(__dirname, "../plugins")}.`);
