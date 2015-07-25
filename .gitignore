@@ -18,6 +18,8 @@ public/*.css
 
 HSHCore/**/*.js
 
+plugins/*
+
 # Dependencies
 
 node_modules
