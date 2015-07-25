@@ -1,10 +1,4 @@
-*ooooo ooooo                                          oooooooo8                                      o8        ooooo ooooo
- 888   888   ooooooo  oo ooo oooo   ooooooooo8      888       oooo  o  oooo ooooooooo8 ooooooooo8 o888oo       888   888   ooooooo  oo ooo oooo   ooooooooo8
- 888ooo888 888     888 888 888 888 888oooooo8        888oooooo 888 888 888 888oooooo8 888oooooo8   888         888ooo888 888     888 888 888 888 888oooooo8  
- 888   888 888     888 888 888 888 888                      888 888888888  888        888          888         888   888 888     888 888 888 888 888
-o888o o888o  88ooo88  o888o888o888o  88oooo888      o88oooo888   88   88     88oooo888  88oooo888   888o      o888o o888o  88ooo88  o888o888o888o  88oooo888
-*
-
+# Home Sweet Home
 
 **Introduction :**
 
