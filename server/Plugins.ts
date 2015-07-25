@@ -14,7 +14,7 @@ export default class PluginRemoteClient extends HSHCore.QueryParent {
   }
 
   onGetAllPlugins = () => {
-    if (!fs.existsSync("./plugins")) { HSHCore.error("Plugins' folder has been removed. Please reinstall HSH."); process.exit(); }
+    if (!fs.existsSync("./plugins")) { HSHCore.error("Plugins' folder is not installed. Please, install install at least the default plugins from Pangoraw."); process.exit(); }
     let authors = fs.readdirSync("./plugins");
     let plugins : HSHCore.Plugin[] = [];
 
@@ -31,7 +31,7 @@ export default class PluginRemoteClient extends HSHCore.QueryParent {
 }
 
 export function getAllPlugins() : HSHCore.Plugin[] {
-  if (!fs.existsSync("./plugins")) { HSHCore.error("Plugins' folder has been removed. Please reinstall HSH."); process.exit(); }
+  if (!fs.existsSync("./plugins")) { HSHCore.error("Plugins' folder is not installed. Please, install install at least the default plugins from Pangoraw."); process.exit(); return; }
   let authors = fs.readdirSync("./plugins");
   let plugins : HSHCore.Plugin[] = [];
 
