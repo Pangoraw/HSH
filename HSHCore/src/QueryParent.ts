@@ -2,11 +2,11 @@ import Query from "./Query";
 
 export default class QueryParent {
   namespace : string;
-  socket : SocketIO.Socket;
+  socket : SocketIO.Socket | SocketIOClient.Socket;
   queries : Query[] = [];
   queryParents : QueryParent[] = [];
 
-  constructor( namespace : string, socket : SocketIO.Socket ) {
+  constructor( namespace : string, socket : SocketIO.Socket | SocketIOClient.Socket ) {
     this.namespace = namespace;
     this.socket = socket;
   }
