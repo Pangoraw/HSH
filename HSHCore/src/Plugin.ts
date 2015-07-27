@@ -9,7 +9,7 @@ export default class Plugin {
   name : string;
   url : string;
 
-  constructor(author : string, name : string) {
+  constructor(author : string, name : string, socket? : SocketIO.Socket) {
     this.author = author;
     this.name = name;
     this.url = author + "/" + name;
@@ -18,7 +18,7 @@ export default class Plugin {
       let componentsUrl : string[] = fs.readdirSync(path.join(__dirname, "../../plugins/" + this.url + "/components"));
       for (let url of componentsUrl) {
         if (url.search("layout.jade") == -1)
-          this.components.push(new Component(url, `/plugins/${this.author}/${this.name}/`));
+          this.components.push(new Component(url, `/plugins/${this.author}/${this.name}/`, socket));
       }
     }
   }

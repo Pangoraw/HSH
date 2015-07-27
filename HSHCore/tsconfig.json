@@ -18,6 +18,7 @@
         "./index.d.ts",
         "./index.ts",
         "./src/Component.ts",
+        "./src/Plugin.ts",
         "./src/Query.ts",
         "./src/QueryParent.ts"
     ]
