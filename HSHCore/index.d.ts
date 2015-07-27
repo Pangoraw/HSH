@@ -2,4 +2,5 @@
 
 interface ComponentOptions {
   size : { w : number, h : number };
+  hasSocket : boolean;
 }

@@ -22,7 +22,7 @@ export default class PluginRemoteClient extends HSHCore.QueryParent {
       let pluginsByAuthor = fs.readdirSync(`./plugins/${author}`);
       for (let pluginName of pluginsByAuthor) {
         if (fs.statSync(`./plugins/${author}/${pluginName}`).isDirectory() && pluginName !== ".git")
-          plugins.push(new HSHCore.Plugin(author, pluginName));
+          plugins.push(new HSHCore.Plugin( author, pluginName, this.socket ));
       }
     }
 

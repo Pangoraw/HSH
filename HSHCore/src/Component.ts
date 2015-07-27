@@ -15,7 +15,7 @@ export default class Component {
     return iframe;
   };
 
-  constructor( name : string, parentUrl : string ) {
+  constructor( name : string, parentUrl : string, socket : SocketIO.Socket ) {
     this.name = name;
     this.url = parentUrl + "components/" + this.name;
 
@@ -24,7 +24,10 @@ export default class Component {
       let config : ComponentOptions = JSON.parse(fs.readFileSync(path.join(__dirname, "../../", this.url + "/config.json"), { encoding : "utf-8" }));
       if (config.size != undefined) {
         this.size = config.size;
-        this.initSize;
+      }
+      if (config.hasSocket) {
+        let serverClass = require(path.join(__dirname, "../../", this.url + "/server/index"));
+        new serverClass(socket);
       }
     }
   }
